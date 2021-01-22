@@ -9,3 +9,4 @@ Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angu
 * Instalar o Angular CLI (comando: `npm install -g @angular/cli`)
 * Baixar as dependências (comando: `npm install`)
 * Rodar o projeto com o comando `ng serve`. Abrir no browser `http://localhost:4200`
+* Subir o projeto servidor (https://github.com/EdsonGustavoTofolo/SoftfocusDesafioServer/)
