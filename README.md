@@ -1,15 +1,11 @@
 # SoftfocusDesafioClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Rodar o comando `ng serve` para ter um servidor de desenvolvimento. Navegue para `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Rode o comando `ng build` para construir o projeto. Os artefatos gerados estarão na pasta `dist/` . 
