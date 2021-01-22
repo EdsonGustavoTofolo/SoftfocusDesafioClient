@@ -6,6 +6,6 @@ Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angu
 
 * Clonar projeto (comando: git clone https://github.com/EdsonGustavoTofolo/SoftfocusDesafioClient.git)
 * Instalar o NodeJS (https://nodejs.org/en/download/)
-* Baixar as dependências (comando: `npm install`)
 * Instalar o Angular CLI (comando: `npm install -g @angular/cli`)
+* Baixar as dependências (comando: `npm install`)
 * Rodar o projeto com o comando `ng serve`. Abrir no browser `http://localhost:4200`
