@@ -1,0 +1,33 @@
+<mat-card *ngIf="playlistCitySearched">
+  <mat-card-title>Cidade</mat-card-title>
+  <mat-card-subtitle>{{playlistCitySearched.cityName}}</mat-card-subtitle>
+  <mat-card-content>
+    <p>Temperatura: <span>{{playlistCitySearched.temperature}}º Celsius</span></p>
+    <p>Coordenadas: Latitude: <span>{{playlistCitySearched.latitude}}, Longitude: {{playlistCitySearched.longitude}}</span></p>
+  </mat-card-content>
+</mat-card>
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Música</th>
+      <td mat-cell *matCellDef="let row">{{row.name}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="totalItems"
+      [pageIndex]="pageIndex"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 20, 50]">
+  </mat-paginator>
+</div>

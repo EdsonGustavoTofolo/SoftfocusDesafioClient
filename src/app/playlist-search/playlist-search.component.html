@@ -1,0 +1,37 @@
+<form [formGroup]="searchForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Buscar playlist</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Cidade" formControlName="cityName">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Latitude" formControlName="lat">
+<!--            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">-->
+<!--              First name is <strong>required</strong>-->
+<!--            </mat-error>-->
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Longitude" formControlName="long">
+<!--            <mat-error *ngIf="addressForm.controls['lastName'].hasError('required')">-->
+<!--              Last name is <strong>required</strong>-->
+<!--            </mat-error>-->
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Buscar</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

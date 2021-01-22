@@ -1,0 +1,3 @@
+<app-navigation></app-navigation>
+<app-playlist-search (playlistCityEvent)="fwdItems($event)" [pageEvent]="pageEvent"></app-playlist-search>
+<app-playlist [playlistCityEvent]="playlistCityEvent" (pageEvent)="fwdPageChange($event)"></app-playlist>
